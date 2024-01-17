@@ -1,0 +1,35 @@
+h1 {
+    color: coral;
+    margin: 0%;
+}
+
+/*Podemos modificar los colores de los links segun su estado*/
+#page-link{
+
+    /*Color del link si nunca ha sido visitado*/
+    background-color: #023047;
+    padding: 10px 25px;
+    text-align: center;
+    color: #d6bea2;
+    text-decoration: none;
+    display: inline-block;
+}
+
+   
+#page-link:visited {
+    /*Color del link si ha sido visitado*/
+    color: #219ebc ;
+    text-decoration: none;
+}
+
+#page-link:hover {
+    /*Color del link si se pone el mouse encima de el*/
+    color: #8ecae6;
+    background-color: aquamarine;
+}
+
+#page-link:active {
+    /*Color del link si se mantiene presionado*/
+    color: #023047;
+}
+
