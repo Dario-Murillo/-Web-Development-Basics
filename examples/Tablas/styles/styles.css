@@ -1,0 +1,37 @@
+caption {
+    color: indianred;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: xx-large;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+table {
+    /*Toma todo el espacio de la pagina*/
+    width: 100%;
+}
+
+table, th, td {
+    border: 1px solid cornflowerblue;
+    border-collapse: collapse;
+    /*Crear mas espacios entre los cuadros*/
+    padding: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: medium;
+}
+
+td {
+    text-align: center;
+}
+
+th {
+    color: darkred;
+    background-color: aliceblue;
+    text-align: center;
+}
+
+tr:nth-child(even) {
+    background-color: gainsboro;
+}
+
+
