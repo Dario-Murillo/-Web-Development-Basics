@@ -1,0 +1,34 @@
+/*El asterisco indica que esto se le va a aplicar a todos los elementos de la pagina*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*Identificador de CSS*/
+#titulo_principal {
+    color: #f72585;
+    text-align: center;
+    margin: 15px;
+}
+
+h2 {
+    color: #3f37c9;
+}
+
+p {
+    color: #457b9d;
+}
+
+/*Clase de CSS*/
+.tarjeta {
+    border: 10px solid #560bad;
+    background-color: #f1faee;
+    text-align: center;
+    margin: 15px 100px;
+    padding: 15px;
+}
+
+.titulo {
+    color: #3f37c9;
+}
+
