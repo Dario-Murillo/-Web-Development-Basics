@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios en HTML</title>
+</head>
+<body>
+    <!-- El metodo GET envia la informacion en el query string-->
+    <h1> Formularios en HTML </h1>
+    <!--action="" dentro de la etiqueta form indica al servidor al que se envia la informacion-->
+    <form method="get"> 
+        <fieldset>
+            <legend> Datos Personales</legend>
+            <label for="nombre"> Nombre: </label> <br/>
+            <!-- El tag de requiered indica que se debe llenar -->
+            <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required = true> <br/>
+            
+            <!-- Podemos ocultar informacion que igual sera enviada al servidor -->
+            <input type="hidden" id="sistema" name="sistema" value="SAP">
+
+            <label for="apellido"> Apellido: </label> <br/>
+            <input type="text" id="apellido" name="apellido" placeholder="Escribe tu apellido" required = true> <br/>
+            <!-- El metodo POST oculta la informacion para que no se vea en el query string-->
+            <label for="clave"> Clave: </label> <br/>
+            <input type="password" id="clave" name="clave" placeholder="Escribe tu clave"> <br/>
+            
+            <label for="email"> Email: </label> <br/> 
+            <input type="email" id="email" name="email" placeholder="Escribe tu email"> <br/>
+            
+            <label for="edad"> Edad: </label> <br/> 
+            <input type="number" id="edad" name="edad" placeholder="Escribe tu edad"> <br/>
+            
+            <label> Genero: </label> <br/>
+            <input type="radio" id="Femenino" name="Genero" value="Femenino"/>
+            <label for="Femenino"> Femenino </label> <br/>
+            <input type="radio" id="Masculino" name="Genero" value="Masculino"/>
+            <label for="Masculino"> Masculino </label> <br/>
+            <input type="radio" id="Otro" name="Genero" value="Otro"/>
+            <label for="Otro"> Otro </label> <br/>
+            
+            <label> Musica </label> <br/>
+            <input type="checkbox" id="clasica" name="Musica" value="clasica"/>
+            <label for="clasica"> Clasica </label> <br/>
+            <input type="checkbox" id="rock" name="Musica" value="rock"/>
+            <label for="rock"> Rock </label> <br/>
+            <input type="checkbox" id="jazz" name="Musica" value="jazz"/>
+            <label for="jazz"> Jazz </label> <br/>       
+            <input type="checkbox" id="rap" name="Musica" value="rap"/>
+            <label for="rap"> Rap </label> <br/>
+
+            <label for="autos"> Marca de auto favorita </label> <br/>
+            <select id="autos" name="autos">
+                <option value="Audi"> Audi </option>
+                <option value="Honda"> Honda </option>
+                <option value="BMW"> BMW </option>
+            </select> <br/>
+
+            <label for="comentario"> Comentarios </label> <br/>
+            <textarea id="comentario" name="comentario" rows="2" cols="30"
+            >Mi comentario
+            </textarea> <br/>
+
+            <input type="submit" value="Enviar" id="boton">
+
+            <input type="reset" value="Restablecer">
+
+        </fieldset>
+    </form>
+</body>
+</html>
