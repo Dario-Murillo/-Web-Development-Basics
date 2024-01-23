@@ -3,9 +3,14 @@
     padding: 0;
 }
 
+body {
+    background-color: rgba(27,27,27,255);
+    color: white;
+}
+
 .container a {
     text-decoration: none;
-    color:cadetblue;
+    color: #8cb4ff;
 }
 
 
@@ -68,7 +73,9 @@ hr {
     font-size: 20px;
 }
 
-
+.container .tabla td {
+    padding: 10px;
+}
 
 .container .tabla td:visited {
     text-decoration: none;
@@ -86,7 +93,7 @@ hr {
 }
 
 .container .tabla  tr:nth-child(even) {
-    background-color: gainsboro;
+    background-color: #313131;
 }
 
 .container .index {
@@ -94,25 +101,32 @@ hr {
     margin-right: 17px;
     margin-top: 20px;
     border-radius: 10px;
-    background-color:gainsboro;
+    padding: 30px 0px;
+    background-color: #313131;
 }
 
-.container .index h2{
-    position: relative;
+.container .index h2 {
     margin-left: 30px;
-    padding-bottom: 10px;
+    padding-bottom: 15px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #449c64;
 }
 
-.container .index a{
+.container .index a {
     margin-left: 30px;
-    padding-bottom: 10px;
+    margin-bottom: 15px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 17px;
+    line-height: 30px;
+}
+
+.container .index .move {
+    margin-left: 50px;
 }
 
 .container .intro {
     text-align: left;
-    padding-bottom: 10px;
+    padding-bottom: 15px;
 }
 
 .container .subs {
@@ -120,7 +134,8 @@ hr {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     padding-top: 20px;
     padding-left: 20px;
-    padding-bottom: 10px;
+    padding-bottom: 15px;
+    color: #44e0a0;
 }
 
 .container .link-material {
@@ -134,3 +149,37 @@ hr {
 .container .link-material li {
     padding: 5px 0px;
 }
+
+.container .foot {
+    margin-top: 50px;
+    height: 50px;
+    width: 100%;
+    background-color: #313131;
+    padding-top: 20px;
+}
+
+.container .foot #datetime {
+    margin: 0 auto;
+    text-align: center;
+    width: max-content;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-top: 5px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #44e0a0;
+    font-size: 20px;
+}
+
+.container .foot #logo {
+    float: right;
+    width: max-content;
+    padding-right: 20px;
+}
+
+.container .foot #arrow {
+    float: left;
+    width: max-content;
+    padding-left: 20px;
+}
+

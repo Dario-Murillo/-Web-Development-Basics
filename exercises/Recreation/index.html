@@ -6,8 +6,9 @@
     <title>CI-0117 Programación Paralela y Concurrente</title>
     <link rel="icon" href="img/jhc-lgreen.svg" type="image/icon type">
     <link href="styles/syles.css" rel="stylesheet">
+
 </head>
-<body>
+<body class="container">
     <div class="container">
         <h1> CI-0117 Programación Paralela y Concurrente: 2023a </h1>
     <div>
@@ -49,7 +50,7 @@
             <td> Ejemplos de programas realizados durante las lecciones </td>
         </tr>
         <tr>
-            <td> <a href="https://jeisson.ecci.ucr.ac.cr/concurrente/2022b/material/"> Material de Curso </a> </td>
+            <td> <a href="https://jeisson.ecci.ucr.ac.cr/concurrente/2022b/material/" target="_blank"> Material de Curso </a> </td>
             <td class="center"> - </td>
             <td> Material de referencia </td>
         </tr>
@@ -81,10 +82,10 @@
     </table>
     </div>
     <div class="index">
-        <h2> Indice de lecciones </h2>
+        <h2> Índice de lecciones </h2>
         <a href="#Introduccion"> Introducción </a> <br/>
-        <a href="#Material"> Material de Referencia </a> <br/>
-        <a href="#Taller"> Taller de C++ a C </a><br/>
+        <a class="move" href="#Material"> Material de Referencia </a> <br/>
+        <a class="move" href="#Taller"> Taller de C++ a C </a><br/>
     </div>
     <div>
         <h1 id="Introduccion" class="intro"> Introducción </h2>
@@ -186,6 +187,20 @@
             </li>
         </ol>
     </div>
-
+    <div class="foot">
+        <p id="datetime"></p>
+        <a href="https://jeisson.ecci.ucr.ac.cr/" id="logo">
+            <img src="img/jhc-lgreen.svg"> 
+        </a>
+        <a href="https://jeisson.ecci.ucr.ac.cr/" id="arrow">
+            <img src="img/back-lgreen.svg">
+        </a>
+    </div>
+    <script>
+        var now = new Date();
+        var datetime = now.toLocaleString();
+        // Insert date and time into HTML
+        document.getElementById("datetime").innerHTML = datetime;
+    </script>
 </body>
 </html>
