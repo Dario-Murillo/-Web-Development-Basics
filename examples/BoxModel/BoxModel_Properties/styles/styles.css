@@ -1,0 +1,29 @@
+h1 {
+    text-align: center;
+    color: crimson;
+}
+
+div {
+    padding: 10px 15px 5px 3px;
+    border: 1px solid #4579bd;
+    margin: 20px;
+    background-color: #f1faee ;
+    max-width: 300px;
+    max-height: 100px;
+    /*
+        outline: 10px solid #a8dadc;
+        Separacion entre el borde y el outline
+        outline-offset: 10px;
+    */
+    /*Ocupa 300px en total*/
+    box-sizing: border-box;
+    /*  
+        Centra el div  
+        margin: 0 auto;
+    */
+}
+
+p.interno {
+    margin: inherit;
+}
+
