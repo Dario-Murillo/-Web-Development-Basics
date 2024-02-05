@@ -1,0 +1,38 @@
+h1 {
+    text-align: center;
+    color: crimson;
+}
+
+div {
+    padding: 15px;
+    margin: 0, auto;
+}
+
+.clock-icon {
+    font-size: 2.5em;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: oblique;
+}
+
+.display-icon {
+    font-size: 2.5em; 
+    color: firebrick;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: normal;
+}
+
+.search-icon {
+    vertical-align: bottom;
+    color: blueviolet;
+    font-size: 2.5em;
+}
+
+.hearth-icon {
+    font-size: 2.5em;
+    color: indigo;
+}
+
+.tux {
+    font-size: 3.5em;
+}
