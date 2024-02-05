@@ -1,0 +1,30 @@
+h1, div, p {
+    border: 3px solid blueviolet;
+    text-align: center;
+    color: cornflowerblue;
+    padding: 15px;
+    display: block;
+}
+
+h1 {
+    /*Oculta los elementos
+    display: none;
+    */
+    display: block;
+}
+
+p{
+    visibility: hidden;
+}
+
+span {
+    border: 1px solid crimson;
+}
+
+a {
+    display: block;
+}
+
+li {
+    display: inline;
+}
