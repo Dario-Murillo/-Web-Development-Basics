@@ -1,0 +1,44 @@
+h1 {
+    text-align: center;
+}
+
+div {
+    font-size: 20px;
+}
+
+.estatic {
+    max-width: 50%;
+    border: 3px solid crimson;
+    margin: auto;
+    text-align: center;
+    position: static;
+}
+
+.relative {
+    max-width: fit-content;
+    border: 3px solid crimson;
+    position: relative;
+    top: 80px;
+    left: 50%;
+    padding-bottom: 2000px;
+}
+
+.fixed {
+    top: 0;
+    border: 3px solid crimson;
+    position: fixed;
+    right: 0;
+}
+
+.absoluta {
+    /*Se suele usar cuando queremos ajustar un div dentro de otro div, siempre y cuando el padre no sea de tipo estatic*/
+    border: 3px solid crimson;
+    top: 80px;
+    position: absolute;
+}
+
+.sticky {
+    top: 25px;
+    border: 3px solid crimson;
+    position: sticky;
+}
