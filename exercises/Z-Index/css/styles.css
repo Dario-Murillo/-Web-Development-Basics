@@ -1,0 +1,30 @@
+h1 {
+    text-align: center;
+}
+
+div.estatico {
+    position: static;
+    padding: 15px;
+    border: 3px solid greenyellow;
+    background-color: whitesmoke;
+}
+
+div.relativo {
+    position: relative;
+    top: 10px;
+    left: 10px;
+    padding: 15px;
+    border: 3px solid blueviolet;
+    background-color: whitesmoke;
+}
+
+div.absoluto {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 25px;
+    border: 3px solid cornflowerblue;
+    background-color: whitesmoke;
+    /*Esconde al elemento detras del div relativo*/
+    z-index: -1;
+}
