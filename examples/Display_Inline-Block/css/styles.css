@@ -1,0 +1,43 @@
+h1 {
+    text-align: center;
+    color: #457b9d;
+}
+
+div.container {
+    width: 80%;
+    height: 20%;
+    overflow: auto;
+    margin: auto;
+    border: 3px dashed #a8dadc;
+}
+
+span {
+    font-weight: bold;
+    font-style: italic;
+    font-size: larger;
+    background-color: #a8dadc;
+    border: 1px solid #457b9d;
+    height: 50px;
+    padding: 5px;
+    display: inline-block;
+}
+
+.menu {
+    list-style: none;
+    text-align: center;
+}
+
+.menu li {
+    display: inline-block;
+    padding: 15px;
+    margin: 20px;
+    background-color: #e638a6;
+    border-radius: 5px;
+    font-size: larger;
+
+}
+
+.menu li a {
+    color: black;
+    text-decoration: none;
+}
