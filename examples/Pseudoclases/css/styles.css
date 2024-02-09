@@ -1,0 +1,63 @@
+body {
+    background-color: black;
+    font: 1em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    color: #e63946;
+}
+
+div.container {
+    width: 30%;
+    height: 20%;
+    margin: auto;
+    border: 3px solid #a8dadc;
+    padding: 15px;
+    color: #457b9d;
+}
+
+div.container:hover {
+    background-color:#457b9d;
+    color: #f1faee;
+}
+
+div.container.oculto p {
+    display: none;
+}
+
+div.container.oculto:hover p {
+    display: block;
+    background-color: #a8dadc;
+    color: #023e8a;
+    padding: 15px;
+}
+
+div.container.primero p:first-child {
+    font-variant: small-caps;
+}
+
+div.container.seleccion p::selection {
+    color: red;
+    background-color: yellow;
+}
+
+div.container.seleccion p::first-line {
+    font-variant: small-caps;
+    color: #a8dadc;
+}
+
+div.container.seleccion p::first-letter {
+    color: #a8dadc;
+    font-size: 1.5em;
+}
+
+div.container.seleccion p::before {
+    content: "-";
+}
+
+div.container.seleccion p::after {
+    content: " -";
+}
+
