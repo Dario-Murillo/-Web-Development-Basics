@@ -1,0 +1,45 @@
+html {
+    height: auto;
+    min-height: 100%;
+}
+
+body {
+    /* background:linear-gradient(#f72585,#3a0ca3); */
+    /* background:linear-gradient(to right, #f72585,#3a0ca3); mueve el gradiente hacia la derecha */
+    /* background: linear-gradient(#24404d, #6dbff1, black); */
+    /* background: linear-gradient(to bottom right, #f72585,#3a0ca3);*/
+    /* background: linear-gradient(145deg, #f72585,#3a0ca3); */
+    background: radial-gradient(#f72585,#3a0ca3);
+
+    color: white;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+div.container {
+    position: relative;
+    border: 3px dashed coral;
+    width: 30%;
+    margin: auto;
+}
+
+img.imagen {
+    width: 100%;
+    opacity: 0.2;
+}
+
+img:hover {
+    opacity: 1;
+}
+
+div.center {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5em;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+}
