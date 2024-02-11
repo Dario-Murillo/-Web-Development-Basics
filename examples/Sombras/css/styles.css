@@ -1,0 +1,38 @@
+h1 {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    text-shadow: 2px 2px 2px #a8dadc;
+    color: #e63946;
+    font-size: 3.5em;
+}
+
+div.container {
+    position: relative;
+    border: 3px solid #a8dadc;
+    border-radius: 2px;
+    width: 30%;
+    margin: auto;
+    box-shadow: 2px 2px 2px 2px grey;
+    color: #457b9d;
+}
+
+img.imagen {
+    width: 100%;
+    opacity: 0.2;
+}
+
+img:hover {
+    opacity: 1;
+}
+
+div.header {
+    background-color: #4cc9f0;
+}
+
+div.center {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2.5em;
+    padding-top: 2px;
+    text-align: center;
+    text-shadow: 2px 2px 2px rgb(177, 177, 177);
+}
