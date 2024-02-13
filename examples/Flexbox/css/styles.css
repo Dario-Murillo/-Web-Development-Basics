@@ -1,0 +1,30 @@
+h1 {
+    text-align: center;
+    text-shadow: 2px 2px 2px #a8dadc;
+    color: #e63946;
+    font-size: 2.5em;
+}
+
+div.container {
+    display: flex;
+    /* Se agregan de arriba hacia abajo, es decir en forma vertical
+    flex-direction: column; 
+    Se invierten
+    flex-direction: column-reverse; */
+    background-color: #560bad;
+    /*Los elementos pasan al siguiente reglon cuando se disminuye el tamano de la ventana
+    flex-wrap: wrap; */
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    height: 300px;
+    align-items: center;
+}
+
+div.container > p {
+    background-color: #4895ef;
+    color: #f1faee;
+    margin: 20px;
+    padding: 15px;
+    font-size: 1.5em;
+}
+
