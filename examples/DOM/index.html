@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manejo del DOM con HTML y JS</title>
+    <link href="styles/styles.css" rel="stylesheet">
+    <style>
+        .verde {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="verde" id="Header">Manejo del DOM con HTML y JS</h1>
+    <p class="verde" id="Parrafo"> Saludos </p>
+    <p class="verde" id="Parrafo2"> Nuevo parrafo </p>
+    <script>
+        let header = document.getElementById("Header");
+        let parrafo = document.getElementById("Parrafo");
+        console.log("Header: " + header.innerHTML);
+        console.log(`Parrafo : ${parrafo.innerHTML}`);
+        /* Modificar contenido
+        parrafo.innerHTML = "Nuevo valor";
+        header.innerHTML = "Hi"; */
+        let parrafos = document.getElementsByTagName("p");
+        for (let index = 0; index < parrafos.length; index++) {
+            const element = parrafos[index];
+            console.log(element.innerHTML);
+        }
+
+        let colores = document.getElementsByClassName("verde");
+        for (let index = 0; index < colores.length; index++) {
+            const element = colores[index];
+            console.log(element.innerHTML);
+        }
+
+        // Seleccion los elementos con esa clase
+        let parrafos_colores = document.querySelectorAll("p.verde");
+        for (let index = 0; index < parrafos_colores.length; index++) {
+            const element = parrafos_colores[index];
+            console.log(element.innerHTML);
+        }
+    </script>
+</body>
+</html>
