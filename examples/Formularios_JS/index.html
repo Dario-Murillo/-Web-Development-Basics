@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario con HTML y JS</title>
+    <link href="styles/styles.css" rel="stylesheet">
+</head>
+<body>
+    <h1 id="header">Formulario con HTML y JS</h1>
+   <form id="form">
+        Nombre: <input type="text" name="Nombre" value="John"> <br>
+        Apellido: <input type="text" name="Apellido" value="Doe"> <br>
+   </form>
+   <!-- Asignar funciones a un evento-->
+   <button onclick="mostrar()">
+        Mostrar
+   </button>
+   <div id="valores">
+   </div>
+   <img src="https://www.ecomare.nl/wp-content/uploads/2017/04/ill-gewone-zeehond-2010-10sw.jpg" id="imagen"> <br/>
+   <script>
+        function mostrar() {
+            let formulario = document.forms["form"];
+            let texto = "";
+            for (let elemento of formulario) {
+                texto += elemento.value + '<br\>';
+            }
+            document.getElementById("valores").innerHTML = texto;
+
+            // Acceder a los elementos de manera individual
+            let nombre = formulario["Nombre"];
+            let apellido = formulario["Apellido"];
+            let texto2 = "";
+            texto2 = nombre.value + "<br\>" + apellido.value + "hola";
+            
+            // Cambia la fuente de una imagen
+            document.getElementById("imagen").src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2o7LSp1SUBYKytYnFi0iCSyNvKMuIW0eHDw&usqp=CAU";
+            
+            // Cambia los estilos de los elementos HTML
+            document.getElementById("header").style.color = "blue";
+        }
+        // Writes on the document
+        document.write("JS");
+
+   </script>
+</body>
+</html>
