@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manejo de Eventos</title>
+    <link href="styles/styles.css" rel="stylesheet">
+</head>
+<body onload="entrada()">
+    <h1 id="header" onmouseover="cambiarColor(this)" onmouseout="original(this)" onmousedown="cambiarPresion(this)"> Manejo de Eventos </h1>
+    <br\>
+    <div id="container">
+    </div>
+    <br\>
+    <div>
+        Nombre: <input type="text" id="nombre" onchange="convertir(this)">
+    </div>
+   <script>
+        document.getElementById("header").onclick = cambiarTexto;
+        function cambiarTexto() {
+            document.getElementById("header").innerHTML = "El titulo cambio";
+        }
+        function original(header) {
+            header.style.color = "black";
+        }
+        function cambiarColor(header) {
+            header.style.color = "red";
+        }
+        function cambiarPresion(header) {
+            header.style.color = "purple";
+        }
+        function entrada() {
+            alert("Ingresando...");
+            let text = '';
+            // Revisa si estan abilitadas las cookies
+            if (navigator.cookieEnabled) {
+                text = "Las cookies estan habilitadas";
+            } else {
+                text = "Las cookies estan desabilitadas";
+            }
+            document.getElementById("container").innerHTML = text; 
+        }
+        // Agregar un "escuchadro de eventos"
+        document.getElementById("nombre").addEventListener("blur", regresar);
+        // Lo mismo pero con funciones flecha
+        document.getElementById("nombre").addEventListener("focus", (evento)=>{
+            evento.target.style.background = "yellow";
+        });
+        function regresar(evento) {
+            evento.target.style.background = "white";
+        }
+        function convertir(nombre) {
+            nombre.value = nombre.value.toUpperCase();
+        }
+
+   </script>
+</body>
+</html>
