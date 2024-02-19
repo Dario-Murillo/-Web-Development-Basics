@@ -1,0 +1,57 @@
+html {
+    height: auto;
+    min-height: 100%;
+}
+
+body {
+    background: linear-gradient(#8E7AB5,#B784B7);
+    overflow: hidden;
+}
+
+article {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0;
+}
+
+div.resultado {
+    display: inline-flex;
+    justify-content: flex-end;
+    width: 29%;
+    background-color: #EEA5A6;
+    border-radius: 4px;
+    padding: 15px 10px;
+    margin: 10px 0px;
+    font-size: x-large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+div.residuo {
+    display: inline-flex;
+    justify-content: flex-end;
+    width: 29%;
+    border-radius: 4px;
+    padding: 15px 0px;
+    font-size: x-large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+div.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 55px;
+    grid-gap: 3px;
+    width: 30%;
+}
+
+div.grid > button {
+    background-color: #E493B3;
+    border-color: #E493B3;
+    border-radius: 5px;
+    font-size: 1.5em;
+}
+
