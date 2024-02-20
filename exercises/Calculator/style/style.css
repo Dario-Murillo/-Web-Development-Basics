@@ -23,10 +23,11 @@ div.resultado {
     width: 29%;
     background-color: #EEA5A6;
     border-radius: 4px;
-    padding: 15px 10px;
-    margin: 10px 0px;
+    padding: 30px 10px;
     font-size: x-large;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    opacity: calc(0.7);
+    height: 30px;
 }
 
 div.residuo {
@@ -37,8 +38,8 @@ div.residuo {
     padding: 15px 0px;
     font-size: x-large;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    height: 30px;
 }
-
 
 div.grid {
     display: grid;
@@ -46,6 +47,7 @@ div.grid {
     grid-auto-rows: 55px;
     grid-gap: 3px;
     width: 30%;
+    margin-top: 10px;
 }
 
 div.grid > button {
