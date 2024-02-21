@@ -1,0 +1,26 @@
+body {
+    background-color: #2D3250;
+}
+
+#clock {
+    font-family: sans-serif;
+    font-size: 60px;
+    text-shadow: 0px 0px 1px black;
+    color: #F6B17A;
+}
+
+.clock-container {
+    background-color: #424769;
+    padding: 25px;
+    max-width: 350px;
+    text-align: center;
+    border-radius: 5px;
+    margin: 0 auto;
+    margin-top: 10%;
+}
+
+#date {
+    padding-top: 15px;
+    font-size: 20px;
+    letter-spacing: 10px;
+}
